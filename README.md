@@ -30,7 +30,7 @@ The following technologies were chosen to demonstrate proficiency in modern, sca
 | **Framework: React** | The mandatory framework for the assignment. | 
 | **Build Tool: Vite** | Chosen over CRA for its superior performance, faster HMR (Hot Module Replacement), and alignment with modern JavaScript build trends. | 
 | **Language: TypeScript** | Used to enforce strong typing, reduce runtime errors, and improve code maintainability and scalability | 
-| **Styling: CSS Modules** | Used for component-scoped styling (in place of Tailwind due to setup issues). Ensures styles are encapsulated and prevents global CSS conflicts, enhancing component design. | 
+| **Styling: Tailwind CSS** | Used for utility-first, rapid styling. Enhances maintainability by keeping CSS localized and demonstrates proficiency with modern tooling. | 
 | **Architecture** | Utilizes a custom `useContacts` hook to centralize all state management (fetch, search, add) away from the UI components. | 
 
 ---
