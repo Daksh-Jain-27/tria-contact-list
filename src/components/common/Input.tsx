@@ -1,4 +1,3 @@
-// src/components/common/Input.tsx
 import type { InputHTMLAttributes } from 'react';
 
 type InputProps = InputHTMLAttributes<HTMLInputElement>;

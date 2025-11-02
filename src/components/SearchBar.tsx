@@ -1,4 +1,3 @@
-// src/components/SearchBar.tsx
 import { Input } from './common/Input';
 
 interface SearchBarProps {

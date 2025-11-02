@@ -1,4 +1,3 @@
-// src/components/common/Button.tsx
 import type { ButtonHTMLAttributes } from 'react';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;

@@ -1,4 +1,3 @@
-// src/components/AddContactForm.tsx
 import { useState } from 'react';
 import { Input } from './common/Input';
 import { Button } from './common/Button';
@@ -6,7 +5,7 @@ import type { Contact } from '../types';
 
 interface AddContactFormProps {
   onAddContact: (contact: Omit<Contact, 'id' | 'avatarUrl'>) => void;
-  onDone: () => void; // Function to call after submitting (e.g., close modal)
+  onDone: () => void; 
 }
 
 export const AddContactForm = ({ onAddContact, onDone }: AddContactFormProps) => {
@@ -22,7 +21,7 @@ export const AddContactForm = ({ onAddContact, onDone }: AddContactFormProps) =>
     }
     
     onAddContact({ name, email, phone });
-    onDone(); // Close the modal
+    onDone(); 
   };
 
   return (

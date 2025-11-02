@@ -1,4 +1,3 @@
-// src/components/ContactCard.tsx
 import type { Contact } from '../types';
 
 interface ContactCardProps {

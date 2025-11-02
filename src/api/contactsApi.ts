@@ -1,5 +1,4 @@
-// src/api/contactsApi.ts
-import type {Contact}  from '../types';
+import type { Contact } from '../types';
 
 const mockContacts: Contact[] = [
   { id: '1', name: 'Alice Smith', email: 'alice@example.com', phone: '123-456-7890', avatarUrl: 'https://api.dicebear.com/8.x/avataaars/svg?seed=Alice' },
@@ -9,17 +8,14 @@ const mockContacts: Contact[] = [
   { id: '5', name: 'Eve Davis', email: 'eve@example.com', phone: '567-890-1234', avatarUrl: 'https://api.dicebear.com/8.x/avataaars/svg?seed=Eve' },
 ];
 
-// This simulates a network request
 export const fetchContacts = (): Promise<Contact[]> => {
   return new Promise((resolve) => {
-    // We add a 1-second delay to show the loading state
     setTimeout(() => {
       resolve(mockContacts);
     }, 1000);
   });
 };
 
-// This simulates adding a contact
 export const addContactApi = (contact: Omit<Contact, 'id' | 'avatarUrl'>): Promise<Contact> => {
   return new Promise((resolve) => {
     setTimeout(() => {

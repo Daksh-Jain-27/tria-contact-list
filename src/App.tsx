@@ -1,4 +1,3 @@
-// src/App.tsx
 import { useState } from 'react';
 import { useContacts } from './hooks/useContacts';
 import { SearchBar } from './components/SearchBar';
@@ -11,7 +10,6 @@ import { AddContactForm } from './components/AddContactForm';
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   
-  // Use our custom hook to get all data and logic
   const { 
     status, 
     filteredContacts, 
@@ -20,7 +18,6 @@ function App() {
     addContact 
   } = useContacts();
 
-  // Helper function to render the main content based on status
   const renderContent = () => {
     switch (status) {
       case 'loading':

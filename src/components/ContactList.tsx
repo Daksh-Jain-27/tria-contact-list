@@ -1,4 +1,3 @@
-// src/components/ContactList.tsx
 import type { Contact } from '../types';
 import { ContactCard } from './ContactCard';
 
