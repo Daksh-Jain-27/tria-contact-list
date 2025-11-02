@@ -5,7 +5,7 @@ This repository contains the frontend assignment for the Contact List applicatio
 ## 🔗 Live Application
 
 **Deployment Status:** Successfully Deployed on Vercel
-**Live URL:** [INSERT YOUR VERSEL DEPLOYMENT LINK HERE]
+**Live URL:** https://tria-contact-list-iota.vercel.app/
 
 ---
 
@@ -58,7 +58,7 @@ Follow these steps to set up and run the project on your local machine.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [YOUR REPO LINK]
+    git clone https://github.com/Daksh-Jain-27/tria-contact-list
     cd tria-contact-list
     ```
 
