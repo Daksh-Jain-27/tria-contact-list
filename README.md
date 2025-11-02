@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# 📚 Tria Contact List Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend assignment for the Contact List application, implemented using **React, Vite, and TypeScript**, with a focus on clean component design and API interaction.
 
-Currently, two official plugins are available:
+## 🔗 Live Application
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Deployment Status:** Successfully Deployed on Vercel
+**Live URL:** [INSERT YOUR VERSEL DEPLOYMENT LINK HERE]
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features & Functionality
 
-## Expanding the ESLint configuration
+[cite_start]This application is a Single Page Application (SPA) built to meet the core requirements and exceed expectations by demonstrating a product-minded approach[cite: 3, 27].
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* [cite_start]**View Contact List:** Displays a list of contacts fetched from a mock API[cite: 5].
+* [cite_start]**Search Contact:** Implements client-side filtering to instantly search contacts by **Name**[cite: 6].
+* [cite_start]**Add New Contact (Optional but Implemented):** Provides a modal form to add a new contact, demonstrating form handling and state updates[cite: 7].
+* [cite_start]**Mimicked API Interaction:** Data is fetched asynchronously from a mock endpoint to simulate real network latency and manage asynchronous state[cite: 14].
+* [cite_start]**Robust State Handling:** Implements **Loading** and **Empty/No Results** states, which addresses the "Handling Ambiguity" requirement[cite: 26].
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Technical Decisions and Libraries
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The following technologies were chosen to demonstrate proficiency in modern, scalable frontend development, aligning directly with the role's requirements.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Technology | Reason for Choice | JD Alignment |
+| :--- | :--- | :--- |
+| **Framework: React** | [cite_start]The mandatory framework for the assignment[cite: 12]. | Core skill listed in JD. |
+| **Build Tool: Vite** | Chosen over CRA for its superior performance, faster HMR (Hot Module Replacement), and alignment with modern JavaScript build trends. | Demonstrates knowledge of frontend build tools. |
+| **Language: TypeScript** | [cite_start]Used to enforce strong typing, reduce runtime errors, and improve code maintainability and scalability[cite: 33]. | Addresses "Nice to Have" skill (TypeScript) in JD. |
+| **Styling: CSS Modules** | Used for component-scoped styling (in place of Tailwind due to setup issues). [cite_start]Ensures styles are encapsulated and prevents global CSS conflicts, enhancing component design[cite: 3]. | Demonstrates understanding of component design and maintainability. |
+| **Architecture** | Utilizes a custom `useContacts` hook to centralize all state management (fetch, search, add) away from the UI components. | Demonstrates ability to "Integrate APIs and manage state efficiently." |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧐 Assumptions & Design Choices
+
+[cite_start]The assignment intentionally left details open to interpretation[cite: 26]. My key design and engineering assumptions were:
+
+* **API Mocking:** I created a clean, separate API layer (`src/api/`) that returns a Promise with a delay. This was done to explicitly showcase my ability to handle **asynchronous data** and **loading states**, which is a core skill for API integration.
+* [cite_start]**Optional Feature Implementation:** The "Ability to add a new contact" [cite: 7] was implemented via a **Modal** component to provide a non-disruptive, modern user experience (UX) and demonstrate form handling.
+* [cite_start]**Design Creativity:** I focused on a simple, modern design that is **fully responsive** to demonstrate UX design skills across different screen sizes[cite: 16].
+
+---
+
+## ⚙️ Setup and Local Run Instructions
+
+[cite_start]Follow these steps to set up and run the project on your local machine[cite: 22].
+
+### Prerequisites
+
+* Node.js (LTS version)
+* npm or Yarn
+
+### Steps
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone [YOUR REPO LINK]
+    cd tria-contact-list
+    ```
+
+2.  **Install Dependencies:**
+    ```bash
+    npm install  # or yarn install
+    ```
+
+3.  **Run the Application:**
+    ```bash
+    npm run dev  # or yarn dev
+    ```
+
+The application will be available at `http://localhost:5173/` (or a similar port displayed in your terminal).
