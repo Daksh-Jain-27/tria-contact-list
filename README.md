@@ -25,8 +25,8 @@ This application is a Single Page Application (SPA) built to meet the core requi
 
 The following technologies were chosen to demonstrate proficiency in modern, scalable frontend development, aligning directly with the role's requirements.
 
-| Technology | Reason for Choice | JD Alignment |
-| :--- | :--- | :--- |
+| Technology | Reason for Choice |
+| :--- | :--- |
 | **Framework: React** | The mandatory framework for the assignment. | 
 | **Build Tool: Vite** | Chosen over CRA for its superior performance, faster HMR (Hot Module Replacement), and alignment with modern JavaScript build trends. | 
 | **Language: TypeScript** | Used to enforce strong typing, reduce runtime errors, and improve code maintainability and scalability | 
